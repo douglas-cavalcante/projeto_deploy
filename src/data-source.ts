@@ -13,7 +13,7 @@ export const AppDataSource = new DataSource({
     synchronize: false,
     logging: process.env.NODE_ENV === 'development' ? true : false ,
     entities: ['../**/*.entity.{ts,js}'],
-    migrations: ["../**/migration/*.{ts,js}"],
+    migrations: ["../migration/*.{ts,js}"],
     subscribers: [],
     ssl: {
         rejectUnauthorized: false
