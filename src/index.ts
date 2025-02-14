@@ -21,7 +21,7 @@ app.use(cors()) // Permite que o express entenda requisições de outros domíni
 app.use(express.json()) // Permite que o express entenda JSON
 
 app.use("/users", userRouter)
-app.use("/products", verifyToken as express.RequestHandler, productRouter)
+app.use("/products", productRouter)
 app.use("/fornecedores", fornecedorRouter )
 app.use("/login", authRouter )
 
